@@ -86,7 +86,7 @@ oDlg := TWindow():New(10, 10, 800, 600, "TOTVS - Exemplo video CloudBridge #2")
 	oMiniPost:oWebEngine:navigate(globalLink)
     oMiniPost:oWebEngine:Align := CONTROL_ALIGN_ALLCLIENT
     
-oDlg:Activate()
+oDlg:Activate("MAXIMIZED")
 Return
 
 /*/	-----------------------------------------------------------------/
@@ -215,7 +215,7 @@ static function jsToAdvpl(self,codeType,codeContent)
 return
 
 /*/	-----------------------------------------------------------------/
-Carrega itens do menu lateral e o JavaScript para exclus„o dos posts
+Carrega itens do menu lateral e o JavaScript para exclus√£o dos posts
 /-------------------------------------------------------------------*/
 static function loadPage()	
 	
@@ -238,7 +238,7 @@ static function loadPage()
     // --------------------------------------------------------------------------------
     // Insere trecho JavaScript para delecao dos posts
     // --------------------------------------------------------------------------------
-    // Serao 2 tipos de deleÁ„o: 1o Apaga o primeiro post da lista, chamado pelo menu lateral
+    // Serao 2 tipos de dele√ß√£o: 1o Apaga o primeiro post da lista, chamado pelo menu lateral
     //                           2o Apaga o post atraves do botao fechar (X) do proprio post
     // --------------------------------------------------------------------------------
     // *IMPORTANTE: Nunca utilize comentarios ao inserir o codigo JavaScript via AdvPL
@@ -273,7 +273,7 @@ static function jsAlert(cTitle, cText)
 return
 
 /*/	-----------------------------------------------------------------/
-Classe AdvPL para manipulaÁ„o do componente TWebEngine
+Classe AdvPL para manipula√ß√£o do componente TWebEngine
 /-------------------------------------------------------------------*/
 class miniPost
 	Data nCount
